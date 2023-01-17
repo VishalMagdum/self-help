@@ -1,0 +1,83 @@
+.error{
+    background-color:pink;
+    border: 1px solid red;
+    color: red;
+    margin-bottom: 10px;
+    /* padding: 5px 5px; */
+    max-width: 250px;
+    display:none;
+}
+.navbar{
+    background-color: aqua !important;
+}
+body{
+    background-color:aquamarine;
+background-attachment: fixed;
+background-size: cover;
+}
+.container{
+    max-width: 450px;
+    height:auto;
+    /* border: 3px solid white; */
+    margin-top: 150px;
+    /* margin: left right 20px; */
+    /* margin-bottom: 50px; */
+    border-radius: 20px;
+    background-color:rgba(255,255,260,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+.text-center img{
+    width: 100px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+nav{
+    background-color:rgba(250,255,260,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.input-group-text{
+    background-color:#002255;
+    color: white;
+}
+.submitbtn{
+    display: flex;
+    justify-content: center;
+    /* border: 3px solid white; */
+}
+#reg-btn{
+    /* border: 3px solid white; */
+    font-weight: 1000;
+    border: none;
+    color:navy; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom:10px;
+   width: 150px;
+    /* margin-top: 10px ; */
+    background-color:rgba(255,255,260,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.shake{
+    animation: shake 0.3s ease-in-out infinite;
+}
+@keyframes shake {
+    0%, 100%{
+        margin-left:0;
+    }
+    20%, 80%{
+        margin-left:-5px;
+    }
+    40%, 60%{
+        margin-left:5px;
+    }
+
+}
+.signup-error{
+    color: red;
+    
+    
+}

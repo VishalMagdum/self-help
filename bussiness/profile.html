@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Help</title>
+    <!-- bootstsap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <style>
+        .profile-container {
+            margin-left: 100px;
+            margin-right: 5px;
+        }
+
+        .fill-form {
+            border: 2px solid white;
+            background-color: gray;
+            border-radius: 10px;
+            visibility: hidden;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 600px;
+            height: 600px;
+            overflow: scroll;
+            overflow-x: hidden;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+
+        .fill-form::-webkit-scrollbar {
+            width: 5px;
+            /* background-clip: padding-box; */
+            margin-right: 100px;
+        }
+
+        .fill-form::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .fill-form::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+            border: 4px solid transparent;
+            border-radius: 10px;
+
+
+
+        }
+
+        .row {
+            display: inline-flex;
+            gap: 60px;
+        }
+
+        .extraInfo h4 {
+            min-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <section>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="#">SELF HELP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav">
+                            <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                        </li> -->
+                            <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Sign Up</a>
+                        </li> -->
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+        <section>
+            <div class="sidebar">
+                <ul>
+                    <li class="list">
+                        <a href=""><span class="sidebar-icon"><i class="fas fa-home"></i></span><span
+                                class="sidebar-item">Home</span></a>
+                    </li>
+                    <li class="list">
+                        <a href="blog.html"><span class="sidebar-icon"><i class="fas fa-newspaper"></i></span><span
+                                class="sidebar-item">Healtcare Blog</span></a>
+                    </li>
+                    <li class="list">
+                        <a href="consultant.html"><span class="sidebar-icon"><i class="fas fa-user-md"></i></span><span
+                                class="sidebar-item">Consultant</span></a>
+                    </li>
+                    <li class="list">
+                        <a href=""><span class="sidebar-icon"><i class="fas fa-calendar-week"></i></span><span
+                                class="sidebar-item">Events</span></a>
+                    </li>
+                    <li class="list">
+                        <a href=""><span class="sidebar-icon"><i class="fas fa-trophy"></i></span><span
+                                class="sidebar-item">Stories</span></a>
+                    </li>
+                    <li class="list">
+                        <a href=""><span class="sidebar-icon"><i class="fas fa-paw"></i></span><span
+                                class="sidebar-item">Humanity corner</span></a>
+                    </li>
+                    <!-- <li class="list logout">
+                    <a href="" onclick=""><span class="sidebar-icon"><i class="fas fa-sign-out-alt"></i></span><span class="sidebar-item">Log Out</span></a>
+                </li> -->
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- main section  -->
+        <section>
+            <div class="profile-container container" style="position: relative;top:100px">
+
+
+            </div>
+        </section>
+    </div>
+
+    <div class="container fill-form">
+        <div class="form">
+            <span
+                style="float:right;margin-top:-15px;top:-15px;margin-right:-10px; position: -webkit-sticky;position:sticky;"
+                onclick="closeForm()"><i class="fas fa-times"></i></span><br />
+            <label for=" name">Full Name: </label>
+            <input type="text" name="" id="name"><br /><br />
+
+            <label for="gender">Gender : </label>
+            <input type="text" name="" id="gender"> &nbsp; &nbsp; &nbsp; &nbsp;
+
+            <label for="dob">DOB : </label>
+            <input type="date" name="" id="dob"><br /><br />
+
+            <label for="contact">Contact No. : </label>
+            <input type="number" name="" id="contact"><br /><br />
+
+
+
+            <label for="qualification">Qualification: </label>
+            <input type="text" name="" id="qualification"> &nbsp;<br /><br />
+
+
+            <label for="certification">Certification : </label>
+            <input type="file" name="" id="certification"><br /><br />
+
+            <!-- <fieldset>
+                    <legend for="language"> language : </legend>
+                    <input type="checkbox" name="hindi" id="hindi" value="hindi">Hindi
+                    <input type="checkbox" name="Marathi" id="Marathi" value="Marathi">Marathi
+                    <input type="checkbox" name="Engalish" id="Engalish" value="Engalish">Engalish
+                    <input type="checkbox" name="" id="">Other
+                </fieldset><br /><br /> -->
+            <label for="language"> language : </label>
+            <input type="text" name="" id="language"><br /><br />
+
+
+            <label for="specialization">Specialization: </label>
+            <input type="text" name="" id="specialization"> &nbsp;
+
+            <h4>description: </h4>
+            <textarea name="" id="description" cols="50" rows="10"></textarea><br />
+
+            <button class="btn btn-outline-dark" type="submit" onclick="saveInfo()">Save</button>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        let body = document.querySelector(".wrap")
+        let formDiv = document.querySelector(".fill-form")
+        const closeForm = function () {
+            body.style.filter = "";
+            formDiv.style.visibility = 'hidden';
+
+        }
+
+        function editInfo() {
+
+            body.style.filter = "blur(5px)";
+            formDiv.style.visibility = 'visible';
+            console.log("clicked")
+            document.querySelector('#name').value = counslerInfo[0].name
+            document.querySelector('#gender').value = counslerInfo[0].gender
+            document.querySelector('#dob').value = counslerInfo[0].dob
+            document.querySelector('#contact').value = counslerInfo[0].contact
+            document.querySelector('#qualification').value = counslerInfo[0].qualification
+            document.querySelector('#certification').value = counslerInfo[0].certification
+            document.querySelector('#language').value = counslerInfo[0].language
+            document.querySelector('#specialization').value = counslerInfo[0].specialization
+            document.querySelector('#description').value = counslerInfo[0].description
+        }
+
+        function saveInfo() {
+            let Name = document.querySelector('#name').value
+            let Gender = document.querySelector('#gender').value
+            let Dob = document.querySelector('#dob').value
+            let Contact = document.querySelector('#contact').value
+            let Qualification = document.querySelector('#qualification').value
+            let Certification = document.querySelector('#certification').value
+            let Language = document.querySelector('#language').value
+            let Specialization = document.querySelector('#specialization').value
+            let Description = document.querySelector('#description').value
+            let formDiv = document.querySelector(".fill-form")
+            const data = {
+                name: Name,
+                image: "/image/profile.png",
+                qualification: Qualification,
+                language: Language,
+                specialization: Specialization,
+                description: Description,
+                category: "xyz",
+                gender: Gender,
+                dob: Dob,
+                contact: Contact,
+                certification: Certification
+
+
+
+            }
+            // console.log(data)
+
+            fetch(`https://6350def83e9fa1244e4f2581.mockapi.io/counsler/${counslerId}`, {
+                method: 'PUT', // or 'PUT'
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log('Success:', data);
+                    sessionStorage.setItem('consultantData', JSON.stringify(consultant))
+                    // formDiv.style.visibility = 'hidden';
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/bussinessJs/profile.js"></script>
+</body>
+
+</html>

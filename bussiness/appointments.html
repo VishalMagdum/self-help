@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Help</title>
+    <!-- bootstsap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="/css/appointment.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <style>
+        .box {
+            padding-top: 100px;
+            padding-left: 100px;
+            padding-right: 40px;
+
+        }
+
+        .total_client,
+        .pending_client {
+            background-color: white;
+            min-width: 250px;
+            border-radius: 8px;
+
+
+        }
+
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card {
+            height: auto;
+            margin-top: 20px;
+
+
+        }
+
+        .total_client p,
+        .pending_client p {
+            color: gray;
+            margin: 8px;
+        }
+
+        .grid {
+            display: inline-flex;
+            gap: 20px;
+
+        }
+
+        .total_client h1,
+        .pending_client h1 {
+            color: blue;
+            margin: 8px;
+
+        }
+
+
+
+        .appointmentList img {
+            width: 60px;
+
+
+        }
+
+        .appointmentList .image {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">SELF HELP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Sign Up</a>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <section>
+        <div class="sidebar">
+            <ul>
+                <li class="list">
+                    <a href=""><span class="sidebar-icon"><i class="fas fa-home"></i></span><span
+                            class="sidebar-item">Home</span></a>
+                </li>
+                <li class="list">
+                    <a href="blog.html"><span class="sidebar-icon"><i class="fas fa-newspaper"></i></span><span
+                            class="sidebar-item">Healtcare Blog</span></a>
+                </li>
+                <li class="list">
+                    <a href="appointments.html"><span class="sidebar-icon"><i class="fas fa-user-md"></i></span><span
+                            class="sidebar-item">Appointments</span></a>
+                </li>
+                <li class="list">
+                    <a href=""><span class="sidebar-icon"><i class="fas fa-calendar-week"></i></span><span
+                            class="sidebar-item">Registarions</span></a>
+                </li>
+                <li class="list">
+                    <a href=""><span class="sidebar-icon"><i class="fas fa-trophy"></i></span><span
+                            class="sidebar-item">Stories</span></a>
+                </li>
+                <li class="list">
+                    <a href=""><span class="sidebar-icon"><i class="fas fa-paw"></i></span><span
+                            class="sidebar-item">Humanity corner</span></a>
+                </li>
+                <!-- <li class="list logout">
+                    <a href="" onclick=""><span class="sidebar-icon"><i class="fas fa-sign-out-alt"></i></span><span class="sidebar-item">Log Out</span></a>
+                </li> -->
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- main section  -->
+    <section>
+        <div class="box">
+            <h1>Overview</h1>
+            <div class="row grid">
+                <div class="col total_client">
+                    <h1>50</h1>
+                    <p>Total clinets</p>
+
+                </div>
+
+                <div class="col pending_client">
+                    <h1>50</h1>
+                    <p>Pending clinets</p>
+
+                </div>
+            </div>
+            <h2>Appointments</h2>
+            <div class="appointmentList container">
+                <!-- <div class="row card container-fluid">
+                    <div class="col image">
+                        <img src="/image/profile.png" alt="" srcset="">
+                    </div>
+                    <div class="col name" style="display:flex;align-items:center">
+                        <h4>Name:Vishal popat Magdum</h4>
+                    </div>
+                    <div class="col date" style="display:flex;align-items:center">
+                        <h4>Date:24/10/2000</h4>
+                    </div>
+                    <div class="col time" style="display:flex;align-items:center">
+                        <h4>Time:2pm to 4pm</h4>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        // const Lihover = document.querySelector(".list");
+        // Lihover.onclick = function () {
+        //     Lihover.style.background - color="gray";
+        // }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/bussinessJs/appointments.js"></script>
+</body>
+
+</html>

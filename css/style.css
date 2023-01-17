@@ -1,0 +1,207 @@
+.navbar {
+    background-color: transparent(0);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    position: fixed !important;
+    width: 100%;
+
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    /* background-clip: padding-box; */
+    margin-right: 100px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border: 4px solid transparent;
+    border-radius: 10px;
+}
+
+body {
+    background-color: gray;
+}
+
+.background-1 {
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 98%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+
+}
+
+.navbar {
+    z-index: 1;
+
+}
+
+.sidebar {
+    z-index: 1;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 20px;
+    width: 50px;
+    height: 90vh;
+    background-color: palevioletred;
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 20px 35px rgba(0,0,0,0.5); */
+
+}
+
+.sidebar:hover {
+    width: 230px;
+
+}
+
+.sidebar ul li:hover {
+    background-color: grey;
+
+}
+
+
+.sidebar ul {
+    /* background-color: gray; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-top: 50px;
+    /* margin-left: -5px; */
+
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-radius: 10px 0px 10px 10px;
+    margin-left: 5px;
+
+}
+
+.sidebar ul li a {
+    position: relative;
+    width: 300px;
+    text-decoration: none;
+    display: flex;
+    color: wheat;
+}
+
+.sidebar ul li a .sidebar-icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+
+    text-align: center;
+}
+
+.sidebar ul li .sidebar-item {
+    line-height: 60px;
+}
+
+.sidebar ul li a .sidebar-icon i {
+    font-size: 1.5em;
+    line-height: 60px;
+    margin-left: -20px;
+}
+
+.sidebar ul li a .sidebar-item {
+    position: relative;
+
+
+
+}
+
+
+
+/* a:hover{
+    background-color: gray;
+} */
+
+
+.home-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    padding: 50px;
+
+
+}
+
+.tagLine {
+    font-family: 'Rubik Microbe', cursive;
+    font-weight: bolder;
+    color: goldenrod;
+    text-align: center;
+    font-size: 50px;
+}
+
+.secLine {
+    font-family: 'Nerko One', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+}
+
+.rdLine {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #fff;
+    max-width: 600px;
+}
+
+.inner-Hdiv {
+    justify-content: center;
+}
+
+.consultant-div {
+    position: relative;
+    top: 100px;
+    padding-left: 50px;
+    /* margi
+    n-left: 100px; */
+}
+
+.btn-consultant {
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.consultant-illustration img {
+    max-width: 500px;
+    display: flex;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.counsler-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.cunsler-lists {
+    height: 400px;
+    overflow: scroll;
+    padding-left: 50px;
+}

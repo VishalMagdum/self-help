@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Help</title>
+    <!-- bootstsap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+    <style>
+        .book-appointment {
+            border: 2px solid white;
+            background-color: gray;
+            border-radius: 10px;
+            visibility: hidden;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -40%);
+            max-width: 800px;
+            height: 500px;
+            overflow: scroll;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+
+        }
+
+        .consultantInfo {
+            min-width: 220px;
+        }
+
+        .consultantImage {
+            max-width: 150px;
+        }
+
+        .form-text {
+            color: burlywood;
+        }
+
+        .book-appointment::-webkit-scrollbar,
+        .cunsler-lists::-webkit-scrollbar {
+            width: 5px;
+            /* background-clip: padding-box; */
+            margin-right: 100px;
+            overflow-x: hidden;
+        }
+
+        .book-appointment::-webkit-scrollbar-track,
+        .cunsler-lists::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .book-appointment::-webkit-scrollbar-thumb,
+        .cunsler-lists::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+            border: 4px solid transparent;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blur">
+        <section>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand " href="#">SELF HELP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="mx-auto"></div>
+                        <ul class="navbar-nav">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign Up</a>
+                            </li> -->
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+        <section>
+            <div class="sidebar">
+                <ul>
+                    <li class="list">
+                        <a href="index.html"><span class="sidebar-icon"><i class="fas fa-home"></i></span><span
+                                class="sidebar-item">Home</span></a>
+                    </li>
+                    <li class="list">
+                        <a href="blog.html"><span class="sidebar-icon"><i class="fas fa-newspaper"></i></span><span
+                                class="sidebar-item">Healtcare Blog</span></a>
+                    </li>
+                    <li class="list">
+                        <a href="consultant.html"><span class="sidebar-icon"><i class="fas fa-user-md"></i></span><span
+                                class="sidebar-item">Consultant</span></a>
+                    </li>
+                    <li class="list">
+                        <a href="event.html"><span class="sidebar-icon"><i class="fas fa-calendar-week"></i></span><span
+                                class="sidebar-item">Events</span></a>
+                    </li>
+                    <li class="list">
+                        <a href="stories.html"><span class="sidebar-icon"><i class="fas fa-trophy"></i></span><span
+                                class="sidebar-item">Stories</span></a>
+                    </li>
+                    <li class="list">
+                        <a href="humanity.html"><span class="sidebar-icon"><i class="fas fa-paw"></i></span><span
+                                class="sidebar-item">Humanity corner</span></a>
+                    </li>
+                    <!-- <li class="list logout">
+                    <a href="" onclick=""><span class="sidebar-icon"><i class="fas fa-sign-out-alt"></i></span><span class="sidebar-item">Log Out</span></a>
+                </li> -->
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- main section  -->
+        <section>
+            <div class="container consultant-div">
+                <div class="btn-group">
+                    <a href="/consultant/life-coaching.html"><button type="button"
+                            class="btn btn-outline-light btn-consultant">
+                            Life Coaching</button></a>
+                    <a href="/consultant/couples-cunseling.html"><button type="button"
+                            class="btn btn-outline-light btn-consultant">Marriage & Couples
+                            Counseling</button></a>
+                    <a href="/consultant/pychotherapy.html"><button type="button"
+                            class="btn btn-outline-light btn-consultant">Psychotherapy</button></a>
+                    <a href="/consultant/psychiatry.html"><button type="button"
+                            class="btn btn-outline-light btn-consultant">Psychiatry</button></a>
+
+
+
+                </div>
+                <hr style="color:white;" />
+                <div class="row">
+
+                    <div class="col" style=" display:flex; align-items: center;">
+                        <div class="consultant-illustration">
+                            <img src="/image/consultant-illustration.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="title">
+                            <h2>Therapist Consultaion</h2>
+                            <p>Consult with our experts and begin your therapy joureny</p>
+
+                        </div>
+                        <hr />
+                        <div class="con-container ">
+                            <div class="filter-box">
+
+                            </div>
+                            <div class="cunsler-lists">
+                                <!-- <div class="counsler">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="counsler-img">
+                                            <img src="/image/counsler.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h4> ABC XYZ</h4>
+                                        <h6>M.Sc., Counselling and Clinical Psychology</h6>
+                                        <h7>Depression Anxitey,Relationships</h7>
+                                        <p>Malasa is a trained mental health professional. She also practices trauma informed approach and is trained in Cognitive behavioural therapy (CBT), Dialectic behavioural therapy (DBT), Acceptance and commitment therapy (ACT), Couple and family therapy. She helps her clients address concerns of grief, anxiety, depression and also treats individuals suffering from chronic psychiatric disorders.</p>
+
+                                    </div>
+                                </div><br />
+                                <div class="row">
+                                    <a class="col-4" href="/consultant/pychotherapy.html"><button type="button"
+                                            class="btn btn-outline-light btn-consultant">View Profile</button></a>
+                                    <a class="col-5" href="/consultant/psychiatry.html"><button type="button"
+                                            class="btn btn-outline-light btn-consultant">Book Appointment</button></a>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="book-appointment">
+
+
+
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="js/consultant.js"></script>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
